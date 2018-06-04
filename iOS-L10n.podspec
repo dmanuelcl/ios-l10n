@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
-  s.name             = 'L10n'
-  s.version          = '0.1.0'
+  s.name             = 'iOS-L10n'
+  s.version          = '0.2.0'
   s.summary          = 'A simple way to localize iOS apps'
 
   s.description      = <<-DESC
