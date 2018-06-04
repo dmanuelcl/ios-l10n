@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZDB-Ur-02h">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="L10n_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48Z-Jx-oC0">
+                                <rect key="frame" x="24" y="323" width="327" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="tableName" value="MessagesStrings"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textLocalizable" value="label_welcome_message"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Only on base language (en)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLj-up-Two">
+                                <rect key="frame" x="24" y="372" width="327" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="tableName" value="MessagesStrings"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textLocalizable" value="label_text_only_en"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="defaultLang" value="en"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Only on base language (es)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJn-Gr-24K">
+                                <rect key="frame" x="24" y="422" width="327" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="tableName" value="MessagesStrings"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="defaultLang" value="es"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textLocalizable" value="label_text_only_es"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="from code" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeJ-PC-9nf">
+                                <rect key="frame" x="24" y="469" width="327" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TLj-up-Two" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="8" id="0GT-cM-idM"/>
+                            <constraint firstItem="TLj-up-Two" firstAttribute="top" secondItem="48Z-Jx-oC0" secondAttribute="bottom" constant="28" id="2YX-cH-Lwj"/>
+                            <constraint firstItem="KeJ-PC-9nf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="8" id="3so-tB-AhJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QJn-Gr-24K" secondAttribute="trailing" constant="8" id="7A7-SY-d3W"/>
+                            <constraint firstItem="QJn-Gr-24K" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="8" id="I1K-E5-4Rd"/>
+                            <constraint firstItem="QJn-Gr-24K" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Jwc-8R-fkv"/>
+                            <constraint firstItem="QJn-Gr-24K" firstAttribute="top" secondItem="TLj-up-Two" secondAttribute="bottom" constant="29" id="UBf-eG-m6e"/>
+                            <constraint firstItem="KeJ-PC-9nf" firstAttribute="top" secondItem="QJn-Gr-24K" secondAttribute="bottom" constant="26" id="Uxr-yT-f7N"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="48Z-Jx-oC0" secondAttribute="trailing" constant="8" id="XaV-Tn-2rW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TLj-up-Two" secondAttribute="trailing" constant="8" id="Y62-6o-ti5"/>
+                            <constraint firstItem="TLj-up-Two" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="deN-EZ-LQh"/>
+                            <constraint firstItem="48Z-Jx-oC0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="8" id="jVy-9w-VkG"/>
+                            <constraint firstItem="KeJ-PC-9nf" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="mb3-Ga-PIb"/>
+                            <constraint firstItem="48Z-Jx-oC0" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="nch-s2-gTB"/>
+                            <constraint firstItem="48Z-Jx-oC0" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="qtg-9M-BQa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KeJ-PC-9nf" secondAttribute="trailing" constant="8" id="vSS-s6-HWl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uix-2d-WgH"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="titleLocalizable" value="view_controller_title"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="tableName" value="MessagesStrings"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="label" destination="KeJ-PC-9nf" id="hJJ-gh-BZK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="364" y="31.934032983508249"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gEL-Z9-gjL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZDB-Ur-02h" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="znh-IF-VTg">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="ZfA-gD-5SC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PZs-Fd-LLH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-433" y="32"/>
+        </scene>
+    </scenes>
+</document>

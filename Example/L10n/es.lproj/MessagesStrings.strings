@@ -1,0 +1,15 @@
+/* 
+  CustomString.strings
+  L10n
+
+  Created by Dani Manuel Céspedes Lara on 12/10/17.
+  Copyright © 2017 CocoaPods. All rights reserved.
+*/
+"view_controller_title" = "L18N - Título del View 'Controller'";
+"welcome_message" = "%@ %@, Gracias por usar L10n";
+"bye_message" = "Nos vemos pronto";
+
+"label_welcome_message" = "Mensaje de Bienvenida desde L18N";
+"label_text_only_es" = "Este texto solo se encuentra en el idioma Español";
+
+"label_text_from_code" = "Este texto se puso desde el código";

@@ -1,0 +1,6 @@
+framework module L10n {
+  umbrella header "L10n-umbrella.h"
+
+  export *
+  module * { export * }
+}

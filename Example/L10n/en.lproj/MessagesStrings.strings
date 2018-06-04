@@ -1,0 +1,17 @@
+/* 
+  MessagesStrings.strings
+  L10n
+
+  Created by Dani Manuel Céspedes Lara on 12/10/17.
+  Copyright © 2017 CocoaPods. All rights reserved.
+*/
+
+
+"view_controller_title" = "L18N - View Controller Title";
+"welcome_message" = "Welcome to use L10n %@ %@";
+"bye_message" = "See you soon";
+
+"label_welcome_message" = "Welcome Message from L18N";
+"label_text_only_en" = "This text only appear on English language";
+
+"label_text_from_code" = "This text come from code";
