@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         self.label.text = MessagesStrings.localize(.textFromCodeExample)
 
         let welcomeMessage = MessagesStrings.localize(.welcomeMessage, ["Mr.", "iOS Developer"])
-        print(welcomeMessage) //Will print "Welcome to use L10n Mr. iOS Developer"
+        print(welcomeMessage) //Will print "Welcome to use iOS-L10n Mr. iOS Developer"
 
         let byeMessage = MessagesStrings.localize(.byeMessage)
         print(byeMessage) //Will print "See you soon"

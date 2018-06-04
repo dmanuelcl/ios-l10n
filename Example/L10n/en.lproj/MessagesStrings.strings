@@ -7,11 +7,11 @@
 */
 
 
-"view_controller_title" = "L18N - View Controller Title";
+"view_controller_title" = "iOS-L10n - View Controller Title";
 "welcome_message" = "Welcome to use L10n %@ %@";
 "bye_message" = "See you soon";
 
-"label_welcome_message" = "Welcome Message from L18N";
+"label_welcome_message" = "Welcome Message from iOS-L10n";
 "label_text_only_en" = "This text only appear on English language";
 
 "label_text_from_code" = "This text come from code";
