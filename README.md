@@ -1,11 +1,11 @@
-# L10n
+# iOS-L10n
 
-[![License](https://img.shields.io/cocoapods/l/L10n.svg?style=flat)](http://cocoapods.org/pods/L10n)
-[![Platform](https://img.shields.io/cocoapods/p/L10n.svg?style=flat)](http://cocoapods.org/pods/L10n)
+[![License](https://img.shields.io/cocoapods/l/iOS-L10n.svg?style=flat)](http://cocoapods.org/pods/iOS-L10n)
+[![Platform](https://img.shields.io/cocoapods/p/iOS-L10n.svg?style=flat)](http://cocoapods.org/pods/iOS-L10n)
 
 
 # About
-L10n is a localization framework for iOS applications that allow localize Storyboards and source code.
+iOS-L10n is a localization framework for iOS applications that allow localize Storyboards and source code.
 
 # Note
 To avoid issues when exporting or importing `.xiff` files, uncheck *Use Base Internationalitation* and use other language like `en` for your base.
@@ -23,7 +23,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 
 
-# How to use L10n on Storyboard
+# How to use iOS-L10n on Storyboard
 
 **All storyboard objects expose the following fields in the inspector attributes**
 
@@ -82,47 +82,47 @@ Attributes inspector allows to define the keys associated with the title of the 
 
 <img src="Screenshots/uiViewController.png"></img>
 
-# How to use L10n on Source Code
+# How to use iOS-L10n on Source Code
 
 Define your Strings
 
 **MessagesStrings.strings**
 
 ````strings
-"welcome_message_key" = "Welcome to use L10n %@ %@";
+"welcome_message_key" = "Welcome to use iOS-L10n %@ %@";
 "bye_message_key" = "See you soon";
 
 ````
 
-Create some type (enums prefered) that conform to **L10n**
+Create some type (enums prefered) that conform to **iOS-L10n**
 
 **MessagesStrings.swift**
 
 ````swift
 
-	import L10n
+	import iOS-L10n
 	
-	enum MessagesStrings: String, L10n{
+	enum MessagesStrings: String, iOS-L10n{
 		case welcomeMessage = "welcome_message_key" 
 		case byeMessage = "bye_message_key"
 		
-		//var tableName: String = "TableName" //If no defined on code L10n will infer the table name using the same name that this instance 'MessagesStrings'
-		//baseLanguage: String = "es" // If no defined L10n will use by default 'en'
-		//bundle: Bundle = MiFramework.bundle // If no defined L10n will use by default 'Bundle.main'
+		//var tableName: String = "TableName" //If no defined on code iOS-L10n will infer the table name using the same name that this instance 'MessagesStrings'
+		//baseLanguage: String = "es" // If no defined iOS-L10n will use by default 'en'
+		//bundle: Bundle = MiFramework.bundle // If no defined iOS-L10n will use by default 'Bundle.main'
 		
-		// Return the localization value based on self, If no defined L10n will return the localized value based on this instance's values
+		// Return the localization value based on self, If no defined iOS-L10n will return the localized value based on this instance's values
 		//public var localized: String {
        // return rawValue.localized(bundle: self.bundle, tableName: self.tableName, baseLanguage: self.baseLanguage)
     	//}
 	}
 ````
 
-Use the instance conforming to **L10n**
+Use the instance conforming to **iOS-L10n**
 
 ````swift
 
 	let welcomeMessage = MessagesStrings.localize(.welcomeMessage, ["Mr.", "iOS Developer"])
-	print(welcomeMessage) //Will print "Welcome to use L10n Mr. iOS Developer"
+	print(welcomeMessage) //Will print "Welcome to use iOS-L10n Mr. iOS Developer"
 	
 	let byeMessage = MessagesStrings.localize(.byeMessage)
 	print(byeMessage) //Will print "See you soon"
@@ -141,11 +141,11 @@ Use the instance conforming to **L10n**
 
 ### CocoaPods
 
-L10n is available through [CocoaPods](http://cocoapods.org). To install
+iOS-L10n is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'L10n'
+pod 'iOS-L10n'
 ```
 
 
@@ -155,4 +155,4 @@ Dani Manuel Céspedes Lara, dmanuelcl@gmail.com
 
 ## License
 
-L10n is available under the MIT license. See the LICENSE file for more info.
+iOS-L10n is available under the MIT license. See the LICENSE file for more info.
